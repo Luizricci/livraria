@@ -1,7 +1,15 @@
-.container{
+.cardContainer{
     display: flex;
     flex-direction: row;
     align-items: center;
-    height: 100vh;
-    background-color: #f0f0f0;
+
+    width: 90%;
+    margin-top: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.4);
+}
+.container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
