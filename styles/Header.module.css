@@ -1,4 +1,69 @@
 .header {
     display: flex;
+    flex-direction: row;
+    gap: 5rem;
+    align-items: center;
+    padding: 1rem 2rem; 
+    border-bottom: 1px solid #ddd; 
+}
+
+.logo {
+    display: flex;
     flex-direction: column;
+    align-items: center ;
+    gap: 0.2rem;
+    font-size: 10px;
+}
+
+.logo h1 {
+    color: rgb(17, 0, 255);
+}
+
+.links {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    position: relative;
+}
+
+.links a:hover {
+    color: rgb(17, 0, 255); 
+    transform: scale(1.1);
+}
+
+.pesquisa {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.inputPesquisa {
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+}
+
+.inputPesquisa input {
+    width: 100%;
+    padding: 0.5rem 2.5rem 0.5rem 1rem; /* Espaço para o ícone à direita */
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 2rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.inputPesquisa .icon {
+    position: absolute;
+    top: 50%;
+    right: 1rem; 
+    transform: translateY(-50%);
+    font-size: 1.2rem;
+    pointer-events: none;
 }
