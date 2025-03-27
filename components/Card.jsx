@@ -1,17 +1,17 @@
 import styles from "../styles/Card.module.css";
 
-export default function Card() {
+export default function Card({nome, escritora, valor, imagem}) {
   return (
     <section >
       <div className={styles.card}>
-        <div>
-          <img src="/image.png" alt="" className={styles.image} />
+        <div className={styles.imageContainer}>
+          <img src={imagem} alt="" className={styles.image} />
         </div>
         <div className={styles.content}>
-          <h3>nome do livro</h3>
-          <p>escritora</p>
+          <h3 className={styles.title}>{nome}</h3>
+          <p className={styles.subTitle}>{escritora}</p>
           <div className={styles.cardFooter}>
-            <p>valor</p>
+            <p className={styles.price}>{valor}</p>
             <button>Comprar</button>
           </div>
         </div>
