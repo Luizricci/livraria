@@ -22,7 +22,12 @@ export default function Header() {
                 <input type="text" placeholder="Buscar livros, autores..." />
                 <span className={styles.icon}>🔍</span>
                 </div>
-            
+            </div>
+
+            <div className={styles.icons}>
+                <a href="/favoritos">❤️</a>
+                <a href="/carrinho">🛒</a>
+                <a href="/login">🙍‍♂️</a>
             </div>
         </header>
     );
