@@ -13,6 +13,7 @@ export default function Card({nome, escritora, valor, imagem}) {
           <div className={styles.cardFooter}>
             <p className={styles.price}>{valor}</p>
             <button>Comprar</button>
+
           </div>
         </div>
       </div>
