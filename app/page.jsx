@@ -1,6 +1,7 @@
 import Header from "../components/Header";
 import Card from "../components/Card";
 import styles from "../styles/Home.module.css";
+import FooterColumn from "../components/FooterColumn";
 
 
 export default function Home() {
@@ -17,6 +18,38 @@ export default function Home() {
           <h2>aqui voce coloca o proximo container</h2>
         </div>
       </main>
+      <footer className={styles.footer}>
+        <div className={styles.footerMain}>
+          <FooterColumn
+            title={"Links Rápidos"}
+            texts={[
+              {text: "Home"}, 
+              {text: "Catalogo"}, 
+              {text: "Sobre Nós"}, 
+              {text: "Contato"}
+            ]}
+          />
+          <FooterColumn
+            title={"Categorias"}
+            texts={[
+              {text: "Ficção Cientifica"},
+              {text: "Romance"}, 
+              {text: "Tecnologia"}, 
+              {text: "Fantasia"}, 
+              {text: "História"},
+            ]}
+          />
+          <FooterColumn
+              title="Redes Sociais"
+              texts={[
+                { text: "Instagram", icon: "https://cdn-icons-png.flaticon.com/512/2111/2111463.png" },
+                { text: "TikTok", icon: "https://cdn-icons-png.flaticon.com/512/3046/3046121.png" },
+                { text: "Twitter", icon: "https://cdn-icons-png.flaticon.com/512/733/733579.png" },
+                { text: "YouTube", icon: "https://cdn-icons-png.flaticon.com/512/1384/1384060.png" },
+            ]}
+          />
+        </div>
+      </footer>
     </div>
   );
 }
