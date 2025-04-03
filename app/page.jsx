@@ -26,14 +26,13 @@ export default function Home() {
             </div>
           <div className={styles.cardLancamento}>
           <Card imagem={"/image-livro01.png"} nome={"ah, Não! Um livro nao "} escritora={"Stéphanie"} valor={"R$ 24,99"}/>
-          <Card imagem={"/image-livro02.png"} nome={"O pequeno Príncipe"} escritora={"Antoine de Saint-Exupéry"} valor={"R$ 25.50"}/>
+          <Card imagem={"/image-livro02.png"} nome={"O pequeno Príncipe"} escritora={"Antoine de Saint-Exupéry"} valor={"R$ 25,50"}/>
           <Card imagem={"/image-livro03.png"} nome={"O menino maluquinho"} escritora={"Ziraldo Alves Pinto"} valor={"R$ 23,59"}/>
           </div>
         </div>
         <div className={styles.cardCategoria}>
           <div className={styles.headerCategoria}>
             <h2>Categorias Populares</h2>
-            <a href="/categorias">Ver todas</a>
           </div>
           <div className={styles.categorias}>
             {categorias.map((categoria, index) => (
@@ -56,7 +55,7 @@ export default function Home() {
 
           <div className={styles.cardLancamento}>
           <Card imagem={"/image-livro04.png"} nome={"Perigoso"} escritora={"Tim Warnesum"} valor={"R$ 33,46"}/>
-          <Card imagem={"/image-livro05.png"} nome={"O homem que amava caixas"} escritora={"Stephen Michael King"} valor={"R$ 29.90"}/>
+          <Card imagem={"/image-livro05.png"} nome={"O homem que amava caixas"} escritora={"Stephen Michael King"} valor={"R$ 29,90"}/>
           <Card imagem={"/image-livro06.png"} nome={"Diário de um banana - Batalha Neval"} escritora={"Jeff Kinney"} valor={"R$ 37,80"}/>
           </div>
         </div>

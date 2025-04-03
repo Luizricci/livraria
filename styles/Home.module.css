@@ -6,6 +6,7 @@
     margin-top: 20px;
     border-radius: 10px;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.4);
+    margin-top: 5rem;
 }
 .container{
     display: flex;
@@ -27,6 +28,7 @@
     width: 100%;
     height: 40vh;
     background-color: rgb(17, 0, 255);
+    margin-top: 5rem;
 }
 .footerMain{
     display: flex;
@@ -90,4 +92,18 @@
     font-size: 1.5rem;
     font-weight: bold;
     color: #0000ff  ;
+}
+
+.cardCategoria{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 5rem;
 }
